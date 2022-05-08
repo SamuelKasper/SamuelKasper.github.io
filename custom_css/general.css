@@ -1,0 +1,10 @@
+body{
+    background-color: var(--custom-background-color-gray);
+}
+
+:root{
+    --custom-background-color-gray: rgb(242, 242, 242);
+    --custom-font-color-dark: rgb(58,51,58);
+    --custom-font-color-light: rgb(126,113,126);
+
+}

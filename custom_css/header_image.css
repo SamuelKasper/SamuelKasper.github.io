@@ -1,0 +1,9 @@
+.aboutMeImage{
+    background-image: url(/images/placeholder.png); 
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}
