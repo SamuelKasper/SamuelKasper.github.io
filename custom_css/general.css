@@ -2,6 +2,14 @@ body{
     background-color: var(--custom-background-color-gray);
 }
 
+.padding_left_10{
+    padding-left: 10%;
+}
+
+.padding_right_10{
+    padding-right: 10%;
+}
+
 :root{
     --custom-background-color-gray: rgb(242, 242, 242);
     --custom-font-color-dark: rgb(58,51,58);

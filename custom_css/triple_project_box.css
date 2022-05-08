@@ -1,0 +1,30 @@
+#triple_project_box{
+    text-align: center;
+}
+
+.project_box{
+    height: 45vh;
+    background-color: rgb(202, 133, 133);
+}
+
+.project_box_middle{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project_button{
+    width: 130px;
+    height: 45px;
+    position: relative;
+    top: 37vh;
+
+}
+
+@media (max-width: 576px) {
+    .project_box_middle{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
