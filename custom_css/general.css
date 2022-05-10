@@ -10,6 +10,11 @@ body{
     padding-right: 10%;
 }
 
+.padding_bottom_top_50px{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 :root{
     --custom-background-color-gray: rgb(242, 242, 242);
     --custom-font-color-dark: rgb(58,51,58);

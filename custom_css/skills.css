@@ -1,0 +1,11 @@
+.skills > h1{
+    text-align: center;
+}
+
+.skill_first_image_padding{
+    padding-left: 30px;
+}
+
+.skill_image_padding{
+    padding-left: 2px;
+}
