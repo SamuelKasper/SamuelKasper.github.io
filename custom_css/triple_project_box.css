@@ -12,12 +12,8 @@
     margin-right: 5px;
 }
 
-.project_button{
-    width: 130px;
-    height: 45px;
-    position: relative;
+.project_box .button_style{
     top: 37vh;
-    border-radius: 15px;
 }
 
 @media (max-width: 576px) {

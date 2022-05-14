@@ -15,6 +15,13 @@ body{
     padding-bottom: 50px;
 }
 
+.button_style{
+    width: 130px;
+    height: 45px;
+    position: relative;
+    border-radius: 15px;
+}
+
 :root{
     --custom-background-color-gray: rgb(242, 242, 242);
     --custom-font-color-dark: rgb(58,51,58);
