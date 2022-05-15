@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Samuel Kasper</title>
 
-    <!-- Bootstrap -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Samuel Kasper</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" type="text/css" href="/custom_css/nav_bar.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/header_image.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/about_me_box.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/general.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/triple_project_box.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/skills.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/contact.css">
-    <link rel="stylesheet" type="text/css" href="/custom_css/footer.css">
+  <!-- Bootstrap -->
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <div id="nav_bar"></div>
-    <div id="header_image"></div>
-    <div id="about_me_box" class="padding_right_10 padding_left_10"></div>
-    <div id="triple_project_box" class="padding_right_10 padding_left_10"></div>
-    <div id="skills"></div>
-    <div id="contact"></div>
-    <div id="footer"></div>
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="/custom_css/nav_bar.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/header_image.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/about_me_box.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/general.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/triple_project_box.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/skills.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/contact.css">
+  <link rel="stylesheet" type="text/css" href="/custom_css/footer.css">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/bootstrap/js/jquery-3.6.0.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-      $(function(){
-        $("#nav_bar").load("/include/nav_bar.html");
-        $("#header_image").load("/include/header_image.html");
-        $("#about_me_box").load("/include/about_me_box.html");
-        $("#triple_project_box").load("/include/triple_project_box.html");
-        $("#skills").load("/include/skills.html");
-        $("#contact").load("/include/contact.html");
-        $("#footer").load("/include/footer.html");
-      })
-    </script>
-  </body>
+</head>
+
+<body>
+  <div id="nav_bar"></div>
+  <div id="header_image"></div>
+  <div id="about_me_box" class="padding_right_10 padding_left_10"></div>
+  <div id="triple_project_box" class="padding_right_10 padding_left_10"></div>
+  <div id="skills"></div>
+  <div id="contact"></div>
+  <div id="footer"></div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="/bootstrap/js/jquery-3.6.0.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav_bar").load("/include/nav_bar.html");
+      $("#header_image").load("/include/header_image.html");
+      $("#about_me_box").load("/include/about_me_box.html");
+      $("#triple_project_box").load("/include/triple_project_box.html");
+      $("#skills").load("/include/skills.html");
+      $("#contact").load("/include/contact.html");
+      $("#footer").load("/include/footer.html");
+    })
+  </script>
+
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("nav_bar").style.display = "block";
+      } else {
+        document.getElementById("nav_bar").style.display = "none";
+      }
+    }
+  </script>
+</body>
+
 </html>
