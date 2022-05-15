@@ -1,5 +1,6 @@
-.skills > h1{
+#skills h1{
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .skill_first_image_padding{
@@ -12,4 +13,24 @@
 
 .skills {
     padding-bottom: 150px;
+}
+
+.skill-box table{
+    margin: auto;
+}
+
+.skill-box-color{
+    background-color: white;
+    height: 20vh;
+}
+
+.skill-box{
+    margin-bottom: 10px;
+}
+
+h4{
+    text-align: center;
+    background-color: var(--custom-background-color-dark-gray);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
