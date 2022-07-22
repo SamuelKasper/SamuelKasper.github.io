@@ -9,3 +9,8 @@
 .spacing-bottom{
     margin-bottom: 2em;
 }
+
+.word-spacing{
+    word-spacing: 5px;
+    
+}
