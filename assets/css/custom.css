@@ -14,3 +14,7 @@
     word-spacing: 5px;
     
 }
+
+.no-overlay .image:before{
+    background-image: none;
+}
