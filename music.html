@@ -271,11 +271,21 @@
 			// Felix
 			sunday: 1, cave: 0.5, spacePirates: 0.2,
 		};
+
 		for (let i in songsWithVolume) {
 			document.getElementById(i).volume = songsWithVolume[i];
 		}
-		
+
+		// Stop playing songs if a new one starts
+		document.addEventListener('play', function(e) {
+			for (let i in songsWithVolume) {
+				if(document.getElementById(i)!=e.target){
+				document.getElementById(i).pause();
+				}			
+			}
+		}, true);
 	</script>
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
