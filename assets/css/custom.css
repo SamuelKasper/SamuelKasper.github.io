@@ -1,21 +1,68 @@
-.custom-margin-music{
-    margin: 0 0 0.5em 25px;
-}
-
-.spacing-top{
+.spacing-top {
     margin-top: 3em;
 }
 
-.spacing-bottom{
+.spacing-bottom {
     margin-bottom: 2em;
 }
 
-.word-spacing{
+.word-spacing {
     word-spacing: 5px;
-    
+
 }
 
-.no-overlay .image:before{
+.no-overlay .image:before {
     background-image: none;
 }
 
+/*Music*/
+.custom-margin-music {
+    margin: 0px;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #36394b;
+    border-radius: 8px 0px 0px 8px;
+    text-align: center;
+    
+}
+
+.song-section {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: rgb(220, 220, 220);
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 12px 8px 8px 12px;
+    box-shadow: 5px 5px 5px rgb(17, 17, 22);
+}
+
+.song-section p {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background: none;
+}
+
+.audio-control{
+    width: 100%;
+}
+
+.music-area h4{
+    margin: 10px 0px 5px 0px;
+}
+
+.music-area h3{
+    margin: 50px 0px 5px 0px;
+}
+
+.spacing-h4{
+    margin-top: 35px !important;
+}
+
+/**/
