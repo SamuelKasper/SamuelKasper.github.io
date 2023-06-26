@@ -35,10 +35,10 @@
 		});
 
 	// Dropdowns.
-		$('#nav > ul').dropotron({
-			alignment: 'right',
-			hideDelay: 350
-		});
+		// $('#nav > ul').dropotron({
+		// 	alignment: 'right',
+		// 	hideDelay: 350
+		// });
 
 	// Nav.
 
