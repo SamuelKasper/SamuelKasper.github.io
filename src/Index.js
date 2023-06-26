@@ -10,38 +10,43 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 window.onload = typing;
 let i = 0;
-let txt = 'Student | Entwickler | Musiker';
+let texts = ['Student | Entwickler | Künstler', 'TypeScript | Java | Python', 'HTML | Bootstrap | CSS', 'Fotografie | Musik | Zeichnen'];
 let speed = 140;
 let toggle = true;
+let counter = 0;
 function typing() {
     return __awaiter(this, void 0, void 0, function* () {
+        if (counter >= texts.length) {
+            counter = 0;
+        }
         if (toggle) {
-            if (i < txt.length) {
-                document.getElementById("typing").innerHTML += txt.charAt(i);
+            if (i < texts[counter].length) {
+                document.getElementById("typing").innerHTML += texts[counter].charAt(i);
                 i++;
             }
             else {
                 toggle = false;
-                yield wait();
+                yield wait(2500);
             }
         }
         else {
             if (i >= 0) {
-                document.getElementById("typing").innerHTML = txt.substring(0, i);
+                document.getElementById("typing").innerHTML = texts[counter].substring(0, i);
                 i--;
             }
             else {
                 toggle = true;
-                yield wait();
+                yield wait(1000);
+                counter++;
             }
         }
         setTimeout(typing, speed);
     });
 }
-function wait() {
+function wait(waiting) {
     return __awaiter(this, void 0, void 0, function* () {
         yield new Promise((resolve) => {
-            setTimeout(() => resolve(true), 3000);
+            setTimeout(() => resolve(true), waiting);
         });
     });
 }
