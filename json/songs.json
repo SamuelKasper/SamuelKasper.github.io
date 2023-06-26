@@ -1,0 +1,123 @@
+{
+    "independent_songs": [
+        {
+            "name": "Slow falling rain",
+            "year": "(2023)",
+            "src": "/audio/independent songs/slow falling rain.mp3",
+            "volume": 0.4
+        },
+        {
+            "name": "Back then",
+            "year": "(2022)",
+            "src": "/audio/independent songs/back then.mp3",
+            "volume": 0.7
+        },
+        {
+            "name": "Funfair",
+            "year": "(2021)",
+            "src": "/audio/independent songs/a fun day.mp3",
+            "volume": 0.3
+        }
+    ],
+    "own_projects": [
+        {
+            "project_name": "Breaking the Silence (2021)",
+            "href":"https://samuelkasper.github.io/VisualNovelEndabgabe/Endabgabe/index.html",
+            "songs": [
+                {
+                    "name": "Doing stuff",
+                    "src": "/audio/Breaking the Silence/Doing_stuff.mp3",
+                    "volume": 0.5
+                },
+                {
+                    "name": "Harvest",
+                    "src": "/audio/Breaking the Silence/Harvest.mp3",
+                    "volume": 0.3
+                },
+                {
+                    "name": "Going",
+                    "src": "/audio/Breaking the Silence/Going.mp3",
+                    "volume": 0.5
+                }
+            ]
+        },
+        {
+            "project_name": "Dodge (2021)",
+            "href": "https://samuelkasper.github.io/Prima-Endabgabe/EndabgabeCode/index.html",
+            "songs": [
+                {
+                    "name": "Dodge",
+                    "src": "/audio/Dodge/Final.mp3",
+                    "volume": 0.5
+                }
+            ]
+        }
+    ],
+    "external_projects": [
+        {
+            "project_name": "Shattered Pieces (2022)",
+            "made_by": "Daniel Meisler",
+            "href":"https://danielmeisler.github.io/VisualNovel_Endabgabe/game.html",
+            "songs": [
+                {
+                    "name": "A short moment",
+                    "src": "/audio/Shattered Pieces/VN - A short moment.mp3",
+                    "volume": 0.3
+                },
+                {
+                    "name": "Both",
+                    "src": "/audio/Shattered Pieces/VN - Both.mp3",
+                    "volume": 0.7
+                },
+                {
+                    "name": "Searching",
+                    "src": "/audio/Shattered Pieces/VN - Searching.mp3",
+                    "volume": 0.3
+                }
+            ]
+        },
+        {
+            "project_name": "Ein unerwartetes Abenteuer (2022)",
+            "made_by": "David Niemann",
+            "href":"https://davidniemann.github.io/Visual_Novel_Niemann_David//Game/Game.html",
+            "songs": [
+                {
+                    "name": "Home",
+                    "src": "/audio/Ein unerwartetes Abenteuer/Home.mp3",
+                    "volume": 0.4
+                },
+                {
+                    "name": "Abandoned",
+                    "src": "/audio/Ein unerwartetes Abenteuer/Abandoned.mp3",
+                    "volume": 0.3
+                },
+                {
+                    "name": "Final Boss",
+                    "src": "/audio/Ein unerwartetes Abenteuer/Final Boss.mp3",
+                    "volume": 0.1
+                }
+            ]
+        },{
+            "project_name": "Deep Down (2023)",
+            "made_by": "Felix Iltgen",
+            "href":"https://davidniemann.github.io/Visual_Novel_Niemann_David//Game/Game.html",
+            "songs": [
+                {
+                    "name": "Sunday",
+                    "src": "/audio/Deep Down/sunday.mp3",
+                    "volume": 1
+                },
+                {
+                    "name": "Cave",
+                    "src": "/audio/Deep Down/cave.mp3",
+                    "volume": 0.5
+                },
+                {
+                    "name": "Space Pirates",
+                    "src": "/audio/Deep Down/space pirates.mp3",
+                    "volume": 0.2
+                }
+            ]
+        }
+    ]
+}
