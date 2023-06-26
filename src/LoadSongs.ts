@@ -40,7 +40,7 @@ async function laodProjects(projects:any, content: HTMLElement | null){
     projects.forEach((project: any) => {
         let headline = document.createElement("h4");
         let link = document.createElement("a");
-        link.innerText = `${project.project_name}`;
+        link.innerText = /*project.made_by ? `${project.project_name} von ${project.made_by}` :*/ `${project.project_name}`;
         link.href = project.href;
         headline.appendChild(link);
         content?.appendChild(headline);

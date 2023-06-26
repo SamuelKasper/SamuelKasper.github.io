@@ -1,7 +1,3 @@
-.spacing-top {
-    margin-top: 3em;
-}
-
 .spacing-bottom {
     margin-bottom: 2em;
 }
@@ -54,7 +50,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 .music-area h4{
-    margin: 10px 0px 5px 0px;
+    margin: 25px 0px 5px 0px;
 }
 
 .music-area h3{
@@ -63,6 +59,10 @@ audio::-webkit-media-controls-enclosure {
 
 .spacing-h4{
     margin-top: 35px !important;
+}
+
+.spacing-top {
+    margin-bottom: -20px !important;
 }
 
 /**/
