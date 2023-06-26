@@ -2,11 +2,6 @@
     margin-bottom: 2em;
 }
 
-.word-spacing {
-    word-spacing: 5px;
-
-}
-
 .no-overlay .image:before {
     background-image: none;
 }
@@ -63,6 +58,12 @@ audio::-webkit-media-controls-enclosure {
 
 .spacing-top {
     margin-bottom: -20px !important;
+}
+
+#typing{
+    min-height: 45px;
+    margin-top: 0px !important;
+    word-spacing: 5px;
 }
 
 /**/
