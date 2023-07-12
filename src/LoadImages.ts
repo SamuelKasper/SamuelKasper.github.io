@@ -16,11 +16,11 @@ async function loadImages(images: any, column: HTMLElement | null) {
         let section = document.createElement("section");
         let link = document.createElement("a");
         let img = document.createElement("img");
-        let line = document.createElement("hr");
 
         link.href = image.href;
         link.target = "_blank";
         link.classList.add("image");
+        link.classList.add("image_style");
         link.classList.add("fit");
         img.src = image.src;
         img.alt = image.alt;
@@ -28,7 +28,6 @@ async function loadImages(images: any, column: HTMLElement | null) {
         link.appendChild(img);
         section.appendChild(link);
         column?.appendChild(section);
-        column?.appendChild(line);
     });
 }
 

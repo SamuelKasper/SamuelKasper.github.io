@@ -1,9 +1,27 @@
+/* Images */
 .spacing-bottom {
     margin-bottom: 2em;
 }
 
 .no-overlay .image:before {
     background-image: none;
+}
+
+.image_style {
+    margin-bottom: 1em !important;
+}
+
+.image_style img {
+	transition: .3s;
+}
+
+.image_style:hover img {
+	transition: .3s;
+    transform: scale(1.1);
+}
+
+.row>* {
+    padding: 0.5em;
 }
 
 /*Music*/
@@ -17,7 +35,6 @@
     background-color: #36394b;
     border-radius: 8px 0px 0px 8px;
     text-align: center;
-    
 }
 
 .song-section {
@@ -40,19 +57,19 @@ audio::-webkit-media-controls-enclosure {
     background: none;
 }
 
-.audio-control{
+.audio-control {
     width: 100%;
 }
 
-.music-area h4{
+.music-area h4 {
     margin: 25px 0px 5px 0px;
 }
 
-.music-area h3{
+.music-area h3 {
     margin: 50px 0px 5px 0px;
 }
 
-.spacing-h4{
+.spacing-h4 {
     margin-top: 35px !important;
 }
 
@@ -60,10 +77,50 @@ audio::-webkit-media-controls-enclosure {
     margin-bottom: -20px !important;
 }
 
-#typing{
+#typing {
     min-height: 45px;
     margin-top: 0px !important;
     word-spacing: 5px;
 }
 
+/* About me*/
+.border_top {
+    border-top: 5px solid #5480f1;
+    padding: 4.5em 0 2.5em 0;
+    height: 35vh;
+}
+
+/* Footer*/
+#footer {
+    padding: 1em 0;
+}
+
+#footer .no_marg {
+    margin: 0px;
+}
+
+#footer .icons {
+    margin-bottom: 0em;
+}
+
+#footer .copyright {
+    margin-top: 1em;
+}
+
+.style2 h2 {
+    margin-bottom: 10px;
+}
+
+.no_shadow {
+    box-shadow: none;
+}
+
 /**/
+@media screen and (max-width: 980px) {
+    .border_top {
+        height: auto;
+        text-align: center;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+}

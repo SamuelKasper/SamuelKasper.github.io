@@ -27,17 +27,16 @@ function loadImages(images, column) {
             let section = document.createElement("section");
             let link = document.createElement("a");
             let img = document.createElement("img");
-            let line = document.createElement("hr");
             link.href = image.href;
             link.target = "_blank";
             link.classList.add("image");
+            link.classList.add("image_style");
             link.classList.add("fit");
             img.src = image.src;
             img.alt = image.alt;
             link.appendChild(img);
             section.appendChild(link);
             column === null || column === void 0 ? void 0 : column.appendChild(section);
-            column === null || column === void 0 ? void 0 : column.appendChild(line);
         });
     });
 }
