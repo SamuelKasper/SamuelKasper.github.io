@@ -26,7 +26,7 @@ function loadIndependentSongs(song_data) {
             section.classList.add("song-section");
             let text = document.createElement("p");
             text.classList.add("custom-margin-music");
-            text.innerText = `${song.name} \n ${song.year}`;
+            text.innerText = `${song.name}`;
             let audio = new Audio(song.src);
             audio.controls = true;
             audio.volume = song.volume;

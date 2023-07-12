@@ -27,7 +27,7 @@
 /*Music*/
 .custom-margin-music {
     margin: 0px;
-    height: 80px;
+    height: 60px;
     width: 200px;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 .song-section {
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 60px;
     background-color: rgb(220, 220, 220);
     align-items: center;
     margin-bottom: 15px;
@@ -67,6 +67,20 @@ audio::-webkit-media-controls-enclosure {
 
 .music-area h3 {
     margin: 50px 0px 5px 0px;
+}
+
+.splitcols{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.splitcol{
+    width: 55%;
+}
+
+.spacing{
+    width: 5%;
 }
 
 .spacing-h4 {
@@ -122,5 +136,13 @@ audio::-webkit-media-controls-enclosure {
         text-align: center;
         padding-left: 2.5em;
         padding-right: 2.5em;
+    }
+
+    .splitcols{
+        flex-direction: column;
+    }
+
+    .splitcol{
+        width: 100%;
     }
 }

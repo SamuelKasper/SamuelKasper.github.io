@@ -16,7 +16,7 @@ async function loadIndependentSongs(song_data: any) {
 
         let text = document.createElement("p");
         text.classList.add("custom-margin-music");
-        text.innerText = `${song.name} \n ${song.year}`;
+        text.innerText = `${song.name}`;
 
         let audio = new Audio(song.src);
         audio.controls = true;

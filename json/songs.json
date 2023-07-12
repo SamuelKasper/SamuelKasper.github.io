@@ -100,7 +100,7 @@
         },{
             "project_name": "Deep Down (2023)",
             "made_by": "Felix Iltgen",
-            "href":"https://davidniemann.github.io/Visual_Novel_Niemann_David//Game/Game.html",
+            "href":"https://felixiltgen.github.io/Visual-Novel-2022/Deep_Dark/index.html",
             "songs": [
                 {
                     "name": "Sunday",
@@ -113,7 +113,7 @@
                     "volume": 0.5
                 },
                 {
-                    "name": "Space Pirates",
+                    "name": "Space pirates",
                     "src": "/audio/Deep Down/space pirates.mp3",
                     "volume": 0.2
                 }
