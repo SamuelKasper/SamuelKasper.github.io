@@ -55,6 +55,7 @@
 .song-section p {
     color: rgb(255, 255, 255);
     font-weight: normal;
+    font-size: 0.9em;
 }
 
 audio::-webkit-media-controls-enclosure {
@@ -128,17 +129,21 @@ audio::-webkit-media-controls-enclosure {
 .project_box a img{
     transition: 0.3s;
     border-radius: 0px 0px 4px 4px !important;
+    filter: grayscale(20%);
 }
 
 .project_box p{
     position: relative;
     z-index: 1;
-    background: #0d0d11;
+    background: #36394b;
+    color: white;
     text-align: center;
     padding: 5px 10px 5px 10px;
     width: 100%;
     margin: 0px;
     border-radius: 10px 10px 0px 0px;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
 .project_box:hover img{
