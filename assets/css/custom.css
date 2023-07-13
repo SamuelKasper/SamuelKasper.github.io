@@ -24,6 +24,10 @@
     padding: 0.5em;
 }
 
+.row {
+    margin-left: 0em;
+}
+
 /*Music*/
 .custom-margin-music {
     margin: 0px;
@@ -104,6 +108,52 @@ audio::-webkit-media-controls-enclosure {
     height: 35vh;
 }
 
+/*Programming Projects*/
+.project_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.project_box a{
+    margin: 0px !important;
+}
+
+.project_box .image{
+    border-radius: 0px 0px 4px 4px !important;
+}
+
+.project_box a img{
+    transition: 0.3s;
+    border-radius: 0px 0px 4px 4px !important;
+}
+
+.project_box p{
+    position: relative;
+    z-index: 1;
+    background: #0d0d11;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project_box:hover img{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.project_subpage_content p{
+    text-align: center;
+}
+
+.blank_space{
+    height: 30vh;
+}
+
 /* Footer*/
 #footer {
     padding: 1em 0;
@@ -134,8 +184,8 @@ audio::-webkit-media-controls-enclosure {
     .border_top {
         height: auto;
         text-align: center;
-        padding-left: 2.5em;
-        padding-right: 2.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
     }
 
     .splitcols{
