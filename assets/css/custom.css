@@ -12,11 +12,11 @@
 }
 
 .image_style img {
-	transition: .3s;
+    transition: .3s;
 }
 
 .image_style:hover img {
-	transition: .3s;
+    transition: .3s;
     transform: scale(1.1);
 }
 
@@ -74,17 +74,17 @@ audio::-webkit-media-controls-enclosure {
     margin: 50px 0px 5px 0px;
 }
 
-.splitcols{
+.splitcols {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.splitcol{
+.splitcol {
     width: 55%;
 }
 
-.spacing{
+.spacing {
     width: 5%;
 }
 
@@ -110,7 +110,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 /*Programming Projects*/
-.project_box{
+.project_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,21 +118,21 @@ audio::-webkit-media-controls-enclosure {
     margin-bottom: 2em;
 }
 
-.project_box a{
+.project_box a {
     margin: 0px !important;
 }
 
-.project_box .image{
+.project_box .image {
     border-radius: 0px 0px 4px 4px !important;
 }
 
-.project_box a img{
+.project_box a img {
     transition: 0.3s;
     border-radius: 0px 0px 4px 4px !important;
     filter: grayscale(20%);
 }
 
-.project_box p{
+.project_box p {
     position: relative;
     z-index: 1;
     background: #36394b;
@@ -146,16 +146,16 @@ audio::-webkit-media-controls-enclosure {
     font-weight: 300;
 }
 
-.project_box:hover img{
+.project_box:hover img {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-.project_subpage_content p{
+.project_subpage_content p {
     text-align: center;
 }
 
-.blank_space{
+.blank_space {
     height: 30vh;
 }
 
@@ -184,6 +184,16 @@ audio::-webkit-media-controls-enclosure {
     box-shadow: none;
 }
 
+.footer-icon {
+    border-bottom: none;
+}
+
+.footer-icon img {
+    filter: invert(100%);
+    height: 30px;
+    width: 30px;
+}
+
 /**/
 @media screen and (max-width: 980px) {
     .border_top {
@@ -193,11 +203,11 @@ audio::-webkit-media-controls-enclosure {
         padding-right: 1.5em;
     }
 
-    .splitcols{
+    .splitcols {
         flex-direction: column;
     }
 
-    .splitcol{
+    .splitcol {
         width: 100%;
     }
 }
