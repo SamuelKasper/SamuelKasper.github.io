@@ -211,3 +211,55 @@ audio::-webkit-media-controls-enclosure {
         width: 100%;
     }
 }
+
+/* Index.html sidepanel animation*/
+.sidepanel{
+    top: 0;
+    visibility: hidden;
+    background: rgba(23, 24, 32, 0.95);
+    border-style: solid;
+    opacity: 1;
+    position: absolute;
+}
+
+@keyframes appear-from-right {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes appear-from-left {
+    0% {
+        transform: translate(-100%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .from-right {
+        animation: appear-from-right 1s 1;
+        border-left-width: 0.35em;
+        right: 0;
+        height: 100%;
+        padding: 6em 3em;
+        width: 28em;
+        visibility: visible;
+    }
+
+    .from-left {
+        animation: appear-from-left 1s 1;
+        border-right-width: 0.35em;
+        left: 0;
+        height: 100%;
+        padding: 6em 3em;
+        width: 28em;
+        visibility: visible;
+    }
+}
