@@ -213,13 +213,14 @@ audio::-webkit-media-controls-enclosure {
 }
 
 /* Index.html sidepanel animation*/
-.sidepanel{
+.sidepanel {
     top: 0;
     visibility: hidden;
     background: rgba(23, 24, 32, 0.95);
     border-style: solid;
     opacity: 1;
     position: absolute;
+    border-color: #5480f1;
 }
 
 @keyframes appear-from-right {
