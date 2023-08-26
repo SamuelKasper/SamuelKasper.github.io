@@ -5,104 +5,75 @@
 	<title>Programmierung</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="./assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
+	<link rel="stylesheet" href="css/main.css" />
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
 </head>
 
-<body class="is-preload">
-	<div id="page-wrapper">
+<body>
+	<!-- Header -->
+	<header id="header">
+		<ul>
+			<li class="nav-landing"><a href="index.html">Startseite</a></li>
+			<li><a href="music.html">Musik</a></li>
+			<li><a href="gallerie.html">Gallerie</a></li>
+		</ul>
+	</header>
 
-		<!-- Header -->
-		<header id="header">
-			<h1><a href="index.html">Startseite</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="music.html">Musik</a></li>
-					<li><a href="gallerie.html">Gallerie</a></li>
-				</ul>
-			</nav>
+	<!-- Main -->
+	<div class="content-wrapper">
+		<header>
+			<h2>Programmierung</h2>
+			<p>Hier findest du einige meiner abgeschlossenen Projekte</p>
 		</header>
 
-		<!-- Main -->
-		<div id="main" class="wrapper style1">
-			<div class="container no-overlay">
-				<header class="major">
-					<h2>Programmierung</h2>
-					<p>Hier findest du einige meiner abgeschlossenen Projekte</p>
-				</header>
+		<div id="projects-grid">
+			<div class="project_box ">
+				<p>LoRaWAN Irrigation System</p>
+				<a href="/projects/irrigation_system.html" class="image-style"><img src="images/projects/sisys.jpg"
+						alt="" /></a>
+			</div>
 
-				<div class="row">
-					<div class="col-4 col-12-medium">
-						<div class="project_box ">
-							<p>LoRaWAN Irrigation System</p>
-							<a href="/projects/irrigation_system.html" class="image fit"><img
-									src="images/sisys.jpg" alt="" /></a>
-						</div>
-						<div class="project_box">
-							<p>Dodge</p>
-							<a href="/projects/dodge.html"
-								class="image fit"><img src="images/dodge.png" alt="" /></a>
-						</div>
-					</div>
+			<div class="project_box">
+				<p>Dodge</p>
+				<a href="/projects/dodge.html" class="image-style"><img src="images/projects/dodge.png" alt="" /></a>
+			</div>
 
-					<div class="col-4 col-12-medium">
-						<div class="project_box">
-							<p>Spotify API Visualizer</p>
-							<a href="/projects/spotify_api.html" class="image fit"><img
-									src="images/SpotifyApi.png" alt="" /></a>
-						</div>
+			<div class="project_box">
+				<p>Spotify API Visualizer</p>
+				<a href="/projects/spotify_api.html" class="image-style"><img src="images/projects/SpotifyApi.png"
+						alt="" /></a>
+			</div>
 
-						<div class="project_box">
-							<p>Breaking the Silence</p>
-							<a href="/projects/breaking_the_silence.html"
-								class="image fit"><img src="images/breaking_the_silence.png" alt="" /></a>
-						</div>
-					</div>
-					<div class="col-4 col-12-medium">
-						<div class="project_box">
-							<p>Sudoku</p>
-							<a href="/projects/sudoku.html" class="image fit"><img
-									src="images/Sudoku.png" alt="" /></a>
-						</div>
+			<div class="project_box">
+				<p>Breaking the Silence</p>
+				<a href="/projects/breaking_the_silence.html" class="image-style"><img
+						src="images/projects/breaking_the_silence.png" alt="" /></a>
+			</div>
 
-						<div class="project_box">
-							<p>Diese Website</p>
-							<a href="/projects/website.html" class="image fit"><img
-									src="images/website.png" alt="" /></a>
-						</div>
-					</div>
-				</div>
+			<div class="project_box">
+				<p>Sudoku</p>
+				<a href="/projects/sudoku.html" class="image-style"><img src="images/projects/Sudoku.png" alt="" /></a>
+			</div>
+
+			<div class="project_box">
+				<p>Diese Website</p>
+				<a href="/projects/website.html" class="image-style"><img src="images/projects/website.png" alt="" /></a>
 			</div>
 		</div>
-
+	</div>
 		<!-- Footer -->
 		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="images/icons/insta.svg" alt="Instagram Icon"></a></li>
-				<li><a href="https://github.com/SamuelKasper" class="footer-icon"><img src="images/icons/github.svg" alt="Github Icon"></a></li>
-				<li><a href="mailto:samuelnkasper@hs-furtwangen.de" class="footer-icon"><img src="images/icons/mail.svg" alt="E-Mail Icon"></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Samuel Kasper. All rights reserved.</li>
-				<li>Design: <a href="http://html5up.net">Landed by HTML5 UP</a></li>
-			</ul>
+			<div class="icons">
+				<a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="images/icons/insta.svg"
+						alt="Instagram Icon"></a>
+				<a href="https://github.com/SamuelKasper" class="footer-icon"><img src="images/icons/github.svg"
+						alt="Github Icon"></a>
+				<a href="mailto:samuelnkasper@hs-furtwangen.de" class="footer-icon"><img src="images/icons/mail.svg"
+						alt="E-Mail Icon"></a>
+			</div>
+			<p id="copyright">© Samuel Kasper. All rights reserved.</p>
 		</footer>
-
 	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

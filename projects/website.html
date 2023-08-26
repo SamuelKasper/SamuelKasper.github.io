@@ -5,63 +5,48 @@
     <title>Programmierung</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <noscript>
-        <link rel="stylesheet" href="/assets/css/noscript.css" />
-    </noscript>
 </head>
 
-<body class="is-preload">
-    <div id="page-wrapper">
+<body>
+    <!-- Header -->
+    <header id="header">
+        <ul>
+            <li class="nav-landing"><a href="../index.html">Startseite</a></li>
+            <li><a href="../projects.html">Projekte</a></li>
+        </ul>
+    </header>
 
-        <!-- Header -->
-        <header id="header">
-            <h1><a href="/index.html">Startseite</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/projects.html">Projects</a></li>
-                </ul>
-            </nav>
+    <!-- Main -->
+    <div class="content-wrapper">
+        <header>
+            <h2>Portfolio Website</h2>
+            <p>Eine auf HTML und CSS basierende Website</p>
         </header>
 
-        <!-- Main -->
-        <div id="main" class="wrapper style1">
-            <div class="container no-overlay">
-                <header class="major">
-                    <h2>Portfolio Website</h2>
-                    <p>Eine auf HTML und CSS basierende Website</p>
-                </header>
-
-                <section class="project_subpage_content">
-                    <p>Diese Website wurde im Mai 2022 erstellt und seitdem immer mal wieder weiterentwickelt. <br> Die
-                        Grundversion der Website basiert auf einem HTML Template, welche durch eigenen HTML, CSS und
-                        TypeScript Code weiterentwickelt wurde. Ursprünglich war die Entwicklung der Website als Spaß-
-                        und Übungsprojekt gedacht. Da sich das Ergebnis sehen lassen kann, nutze ich sie nun als Portfolio
-                        Website.</p>
-                        <div class="blank_space"></div>
-                        <!--<a href="https://samuelkasper.github.io/" class="image fit"><img src="/images/website.png" alt="Website" /></a>-->
-                </section>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="https://www.instagram.com/littlecrops/" class="icon brands alt fa-instagram"><span
-                            class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/SamuelKasper" class="icon brands alt fa-github"><span
-                            class="label">GitHub</span></a></li>
-                <li><a href="mailto:samuelnkasper@hs-furtwangen.de" class="icon solid alt fa-envelope"><span
-                            class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Samuel Kasper. All rights reserved.</li>
-                <li>Design: <a href="http://html5up.net">Landed by HTML5 UP</a></li>
-            </ul>
-        </footer>
+        <section class="project_subpage_content">
+            <p class="p-style">Diese Website wurde im Mai 2022 erstellt und seitdem immer mal wieder weiterentwickelt. <br> Die
+                Grundversion der Website basiert auf einem HTML Template, welche durch eigenen HTML, CSS und
+                TypeScript Code weiterentwickelt wurde. Ursprünglich war die Entwicklung der Website als Spaß-
+                und Übungsprojekt gedacht. Da sich das Ergebnis sehen lassen kann, nutze ich sie nun als Portfolio
+                Website.</p>
+            <div class="blank_space"></div>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="../images/icons/insta.svg"
+                    alt="Instagram Icon"></a>
+            <a href="https://github.com/SamuelKasper" class="footer-icon"><img src="../images/icons/github.svg"
+                    alt="Github Icon"></a>
+            <a href="mailto:samuelnkasper@web.de" class="footer-icon"><img src="../images/icons/mail.svg"
+                    alt="E-Mail Icon"></a>
+        </div>
+        <p id="copyright">© Samuel Kasper. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
