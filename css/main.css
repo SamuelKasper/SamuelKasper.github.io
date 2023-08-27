@@ -38,6 +38,7 @@ h1 {
 #banner-image {
     border-radius: 100%;
     height: clamp(150px, 20vw, 350px);
+    width: clamp(150px, 20vw, 350px);
     margin-left: 3em;
 }
 
