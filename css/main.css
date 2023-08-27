@@ -119,15 +119,15 @@ p {
 
 /* Spotlights */
 #spotlight-programming {
-    background-image: url("../images/landing/coding.webp");
+    background-image: url("../images/landing/coding.jpg");
 }
 
 #spotlight-music {
-    background-image: url("../images/landing/drums.webp");
+    background-image: url("../images/landing/drums.jpg");
 }
 
 #spotlight-gallery {
-    background-image: url("../images/landing/camera.webp");
+    background-image: url("../images/landing/camera.jpg");
 }
 
 .spotlight {
