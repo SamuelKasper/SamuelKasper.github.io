@@ -4,7 +4,7 @@
 <head>
 	<title>Programmierung</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
 </head>
@@ -12,11 +12,21 @@
 <body>
 	<!-- Header -->
 	<header id="header">
-		<ul>
-			<li class="nav-landing"><a href="index.html">Startseite</a></li>
-			<li><a href="music.html">Musik</a></li>
-			<li><a href="gallerie.html">Gallerie</a></li>
-		</ul>
+		<nav>
+			<ul class="nav-mainbar">
+				<li class="nav-landing"><a href="index.html">Startseite</a></li>
+				<li class="burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</li>
+			</ul>
+			<ul class="nav-menu">
+				<li><a href="music.html">Musik</a></li>
+				<li><a href="gallerie.html">Gallerie</a></li>
+				<!-- <li><a href="vtube.html">VTube Models</a></li> -->
+			</ul>
+		</nav>
 	</header>
 
 	<!-- Main -->
@@ -35,7 +45,8 @@
 
 			<div class="project_box">
 				<p>Dodge</p>
-				<a href="/projects/dodge.html" class="image-style"><img src="images/projects/dodge.png" alt="Kleiner blauer Schleim auf einem viereckigen Spielfeld." /></a>
+				<a href="/projects/dodge.html" class="image-style"><img src="images/projects/dodge.png"
+						alt="Kleiner blauer Schleim auf einem viereckigen Spielfeld." /></a>
 			</div>
 
 			<div class="project_box">
@@ -47,33 +58,38 @@
 			<div class="project_box">
 				<p>Breaking the Silence</p>
 				<a href="/projects/breaking_the_silence.html" class="image-style"><img
-						src="images/projects/breaking_the_silence.webp" alt="Screenshot aus der Visual Novel: Breaking the Silence. Zu sehen sind Mira und Nick. Gezeichnet in einem Comicstil."/></a>
+						src="images/projects/breaking_the_silence.webp"
+						alt="Screenshot aus der Visual Novel: Breaking the Silence. Zu sehen sind Mira und Nick. Gezeichnet in einem Comicstil." /></a>
 			</div>
 
 			<div class="project_box">
 				<p>Sudoku</p>
-				<a href="/projects/sudoku.html" class="image-style"><img src="images/projects/Sudoku.png" alt="Spielfeld eines leeren Sudokus." /></a>
+				<a href="/projects/sudoku.html" class="image-style"><img src="images/projects/Sudoku.png"
+						alt="Spielfeld eines leeren Sudokus." /></a>
 			</div>
 
 			<div class="project_box">
 				<p>Diese Website</p>
-				<a href="/projects/website.html" class="image-style"><img src="images/projects/website.webp" alt="Screenshot dieser Website." /></a>
+				<a href="/projects/website.html" class="image-style"><img src="images/projects/website.webp"
+						alt="Screenshot dieser Website." /></a>
 			</div>
 		</div>
 	</div>
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="icons">
-				<a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="images/icons/insta.svg"
-						alt="Instagram Icon"></a>
-				<a href="https://github.com/SamuelKasper" class="footer-icon"><img src="images/icons/github.svg"
-						alt="Github Icon"></a>
-				<a href="mailto:samuelnkasper@hs-furtwangen.de" class="footer-icon"><img src="images/icons/mail.svg"
-						alt="E-Mail Icon"></a>
-			</div>
-			<p id="copyright">© Samuel Kasper. All rights reserved.</p>
-		</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="icons">
+			<a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="images/icons/insta.svg"
+					alt="Instagram Icon"></a>
+			<a href="https://github.com/SamuelKasper" class="footer-icon"><img src="images/icons/github.svg"
+					alt="Github Icon"></a>
+			<a href="mailto:samuelnkasper@hs-furtwangen.de" class="footer-icon"><img src="images/icons/mail.svg"
+					alt="E-Mail Icon"></a>
+		</div>
+		<p id="copyright">© Samuel Kasper. All rights reserved.</p>
+	</footer>
 	</div>
+
+	<script src="src/burgerMenu.js"></script>
 </body>
 
 </html>

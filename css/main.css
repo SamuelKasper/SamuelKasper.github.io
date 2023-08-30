@@ -7,13 +7,14 @@ body {
     background: #191a22;
     font-family: Roboto, Helvetica, sans-serif;
     color: rgba(255, 255, 255);
-    line-height: 1.75em;
+    line-height: 1.75rem;
     font-weight: 100;
     margin: 0px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -305,7 +306,14 @@ p {
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 }
 
-#header ul {
+#header a:hover {
+    color: #5480f1;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav-mainbar {
+    float: right;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -313,28 +321,101 @@ p {
     background-color: rgba(39, 40, 51, 1);
 }
 
-#header a {
+.nav-landing {
+    float: left !important;
+}
+
+.nav-landing a {
     display: block;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
-    padding: 16px 16px;
+    padding: 1rem;
     text-decoration: none;
     font-size: 18px;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-#header a:hover {
-    color: #5480f1;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-#header li {
+/*Burger Menu Nav*/
+.burger-menu {
+    padding: 21px 1rem 1rem 1rem;
     float: right;
-
 }
 
-.nav-landing {
-    float: left !important;
+.burger-menu:hover {
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.burger-menu:hover span {
+    background: #5480f1;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.burger-menu span:last-child {
+    margin-bottom: 0;
+}
+
+.nav-menu {
+    display: block;
+    position: relative;
+    background-color: #1c1d26;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 80%; 
+    height: 0vh;
+    overflow: hidden;
+    padding-top: 0rem;
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding-top 0.5s ease-in-out;
+}
+
+.nav-menu-open {
+    padding-top: 3rem;
+    height: 100vh;
+    opacity: 98%;
+}
+
+.nav-menu a {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 1.25rem 3rem;
+    text-decoration: none;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    line-height: 3rem;
+    letter-spacing: .25ch;
+}
+
+.nav-menu a:hover{
+    background-color: #181921;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 980px) {
+    .nav-menu a {
+        padding: 1.25rem 3rem;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-transform: none;
+        letter-spacing: 0ch;
+    }
+
+    .nav-menu a:hover{
+        font-size: 1.55rem;
+    }
 }
 
 /* Gallerie */
@@ -359,7 +440,7 @@ p {
     margin-top: -1em;
 }
 
-.p-style{
+.p-style {
     font-size: 18px !important;
     color: rgba(255, 255, 255, 0.75) !important;
 }

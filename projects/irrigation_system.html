@@ -12,10 +12,22 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <ul>
-            <li class="nav-landing"><a href="../index.html">Startseite</a></li>
-            <li><a href="../projects.html">Projekte</a></li>
-        </ul>
+        <nav>
+			<ul class="nav-mainbar">
+				<li class="nav-landing"><a href="../index.html">Startseite</a></li>
+				<li class="burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</li>
+			</ul>
+			<ul class="nav-menu">
+				<li><a href="../projects.html">Programmierung</a></li>
+				<li><a href="../music.html">Musik</a></li>
+                <li><a href="../gallerie.html">Gallerie</a></li>
+				<!-- <li><a href="vtube.html">VTube Models</a></li> -->
+			</ul>
+		</nav>
     </header>
 
     <!-- Main -->
@@ -64,6 +76,7 @@
         </div>
         <p id="copyright">© Samuel Kasper. All rights reserved.</p>
     </footer>
+    <script src="../src/burgerMenu.js"></script>
 </body>
 
 </html>
