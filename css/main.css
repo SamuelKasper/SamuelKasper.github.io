@@ -53,6 +53,7 @@ h1 {
 
 .banner-text {
     min-width: 200px;
+    margin-top: 0;
 }
 
 @media (max-width: 760px) {
@@ -67,6 +68,10 @@ h1 {
     #typing {
         text-align: center;
         color: white;
+    }
+
+    .banner-text {
+        margin-top: -10%;
     }
 }
 
