@@ -12,36 +12,17 @@ function loadSongs() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch("./json/songs.json");
         const song_data = yield response.json();
+        // Independent
         yield loadIndependentSongs(song_data);
-        yield loadNewSongs(song_data);
-        yield chooseProjects(song_data);
+        // Projects
+        const ownProjects = document.getElementById("own_projects_songs");
+        const externalProjects = document.getElementById("external_project_songs");
+        yield loadProjects(song_data.own_projects, ownProjects);
+        yield loadProjects(song_data.external_projects, externalProjects);
     });
 }
 ;
-function loadNewSongs(song_data) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const content = document.querySelector(".new");
-        let headline = document.createElement("h4");
-        content === null || content === void 0 ? void 0 : content.appendChild(headline);
-        headline.innerText = "NEU:";
-        let new_songs = song_data.new;
-        new_songs.forEach((song) => {
-            let section = document.createElement("section");
-            section.classList.add("song-section");
-            let text = document.createElement("p");
-            text.classList.add("custom-margin-music");
-            text.innerText = `${song.name}`;
-            let audio = new Audio(song.src);
-            audio.controls = true;
-            audio.volume = song.volume;
-            audio.setAttribute('controlsList', 'nodownload');
-            audio.classList.add("audio-control");
-            section.appendChild(text);
-            section.appendChild(audio);
-            content === null || content === void 0 ? void 0 : content.appendChild(section);
-        });
-    });
-}
+// Load independent songs
 function loadIndependentSongs(song_data) {
     return __awaiter(this, void 0, void 0, function* () {
         const content = document.getElementById("independent_songs");
@@ -49,51 +30,53 @@ function loadIndependentSongs(song_data) {
         independent_songs.forEach((song) => {
             let section = document.createElement("section");
             section.classList.add("song-section");
-            let text = document.createElement("p");
-            text.classList.add("custom-margin-music");
-            text.innerText = `${song.name}`;
-            let audio = new Audio(song.src);
-            audio.controls = true;
-            audio.volume = song.volume;
-            audio.classList.add("audio-control");
-            section.appendChild(text);
-            section.appendChild(audio);
+            section.appendChild(createImg(song.img));
+            section.appendChild(createSongName(song.name));
+            section.appendChild(createAudio(song.src, song.volume));
             content === null || content === void 0 ? void 0 : content.appendChild(section);
         });
     });
 }
-function chooseProjects(song_data) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const ownProjects = document.getElementById("own_projects_songs");
-        const externalProjects = document.getElementById("external_project_songs");
-        yield laodProjects(song_data.own_projects, ownProjects);
-        yield laodProjects(song_data.external_projects, externalProjects);
-    });
-}
-function laodProjects(projects, content) {
+// Load songs from own and external projects
+function loadProjects(projects, content) {
     return __awaiter(this, void 0, void 0, function* () {
         projects.forEach((project) => {
             let headline = document.createElement("h4");
             let link = document.createElement("a");
-            link.innerText = /*project.made_by ? `${project.project_name} von ${project.made_by}` :*/ `${project.project_name}`;
+            link.innerText = `${project.project_name}`;
             link.href = project.href;
             headline.appendChild(link);
             content === null || content === void 0 ? void 0 : content.appendChild(headline);
-            project.songs.forEach((song) => {
+            project.songs.forEach((song) => __awaiter(this, void 0, void 0, function* () {
                 let section = document.createElement("section");
                 section.classList.add("song-section");
-                let text = document.createElement("p");
-                text.classList.add("custom-margin-music");
-                text.innerText = `${song.name}`;
-                let audio = new Audio(song.src);
-                audio.controls = true;
-                audio.volume = song.volume;
-                audio.classList.add("audio-control");
-                section.appendChild(text);
-                section.appendChild(audio);
+                section.appendChild(createImg(song.img));
+                section.appendChild(createSongName(song.name));
+                section.appendChild(createAudio(song.src, song.volume));
                 content === null || content === void 0 ? void 0 : content.appendChild(section);
-            });
+            }));
         });
     });
+}
+// Creating the audio element
+function createAudio(_src, _vol) {
+    let audio = new Audio(_src);
+    audio.controls = true;
+    audio.volume = _vol;
+    audio.classList.add("audio-control");
+    audio.setAttribute('controlsList', 'nodownload');
+    return audio;
+}
+// Creating the p element for the song name
+function createSongName(_name) {
+    let text = document.createElement("p");
+    text.innerText = `${_name}`;
+    return text;
+}
+// Create img element
+function createImg(_src) {
+    let image = document.createElement("img");
+    image.src = _src;
+    return image;
 }
 window.onload = loadSongs;

@@ -1,36 +1,39 @@
 {
-    "new": [
-        {
-            "name": "Iced Tea",
-            "year": "(2023)",
-            "src": "/audio/independent songs/Iced Tea.mp3",
-            "volume": 0.6
-        },
+    "independent_songs": [
         {
             "name": "Dried Sunflower",
             "year": "(2023)",
             "src": "/audio/independent songs/Dried Sunflower.mp3",
+            "img":"/images/music/prev-driedsunflower.jpg",
             "volume": 0.6
-        }
-    ],
-    "independent_songs": [
+        },
+        {
+            "name": "Iced Tea",
+            "year": "(2023)",
+            "src": "/audio/independent songs/Iced Tea.mp3",
+            "img":"/images/music/prev-icedtea.jpg",
+            "volume": 0.6
+        },
         {
             "name": "Slow falling rain",
             "year": "(2023)",
             "src": "/audio/independent songs/slow falling rain.mp3",
-            "volume": 0.4
+            "volume": 0.4,
+            "img":"/images/music/prev-slowfallingrain.jpg"
         },
         {
             "name": "Back then",
             "year": "(2022)",
             "src": "/audio/independent songs/back then.mp3",
-            "volume": 0.7
+            "volume": 0.7,
+            "img":"/images/music/prev-backthen.jpg"
         },
         {
             "name": "Funfair",
             "year": "(2021)",
             "src": "/audio/independent songs/a fun day.mp3",
-            "volume": 0.3
+            "volume": 0.3,
+            "img":"/images/music/prev-funfair.jpg"
         }
     ],
     "own_projects": [
@@ -41,33 +44,50 @@
                 {
                     "name": "Doing stuff",
                     "src": "/audio/Breaking the Silence/Doing_stuff.mp3",
-                    "volume": 0.5
+                    "volume": 0.5,
+                    "img":"/images/music/prev-bts.png"
                 },
                 {
                     "name": "Harvest",
                     "src": "/audio/Breaking the Silence/Harvest.mp3",
-                    "volume": 0.3
+                    "volume": 0.3,
+                    "img":"/images/music/prev-bts.png"
                 },
                 {
                     "name": "Going",
                     "src": "/audio/Breaking the Silence/Going.mp3",
-                    "volume": 0.5
-                }
-            ]
-        },
-        {
-            "project_name": "Dodge (2021)",
-            "href": "https://samuelkasper.github.io/Prima-Endabgabe/EndabgabeCode/index.html",
-            "songs": [
-                {
-                    "name": "Dodge",
-                    "src": "/audio/Dodge/Final.mp3",
-                    "volume": 0.5
+                    "volume": 0.5,
+                    "img":"/images/music/prev-bts.png"
                 }
             ]
         }
     ],
     "external_projects": [
+        {
+            "project_name": "Deep Down (2023)",
+            "made_by": "Felix Iltgen",
+            "href": "https://felixiltgen.github.io/Visual-Novel-2022/Deep_Dark/index.html",
+            "songs": [
+                {
+                    "name": "Sunday",
+                    "src": "/audio/Deep Down/sunday.mp3",
+                    "volume": 1,
+                    "img":"/images/music/prev-deepdown.png"
+                },
+                {
+                    "name": "Cave",
+                    "src": "/audio/Deep Down/cave.mp3",
+                    "volume": 0.5,
+                    "img":"/images/music/prev-deepdown.png"
+                },
+                {
+                    "name": "Space pirates",
+                    "src": "/audio/Deep Down/space pirates.mp3",
+                    "volume": 0.2,
+                    "img":"/images/music/prev-deepdown.png"
+                }
+            ]
+        },
         {
             "project_name": "Shattered Pieces (2022)",
             "made_by": "Daniel Meisler",
@@ -76,17 +96,20 @@
                 {
                     "name": "A short moment",
                     "src": "/audio/Shattered Pieces/VN - A short moment.mp3",
-                    "volume": 0.3
+                    "volume": 0.3,
+                    "img":"/images/music/preview-shattered.png"
                 },
                 {
                     "name": "Both",
                     "src": "/audio/Shattered Pieces/VN - Both.mp3",
-                    "volume": 0.7
+                    "volume": 0.7,
+                    "img":"/images/music/preview-shattered.png"
                 },
                 {
                     "name": "Searching",
                     "src": "/audio/Shattered Pieces/VN - Searching.mp3",
-                    "volume": 0.3
+                    "volume": 0.3,
+                    "img":"/images/music/preview-shattered.png"
                 }
             ]
         },
@@ -98,39 +121,20 @@
                 {
                     "name": "Home",
                     "src": "/audio/Ein unerwartetes Abenteuer/Home.mp3",
-                    "volume": 0.4
+                    "volume": 0.4,
+                    "img":"/images/music/prev-unexpadventure.png"
                 },
                 {
                     "name": "Abandoned",
                     "src": "/audio/Ein unerwartetes Abenteuer/Abandoned.mp3",
-                    "volume": 0.3
+                    "volume": 0.3,
+                    "img":"/images/music/prev-unexpadventure.png"
                 },
                 {
                     "name": "Final Boss",
                     "src": "/audio/Ein unerwartetes Abenteuer/Final Boss.mp3",
-                    "volume": 0.1
-                }
-            ]
-        },
-        {
-            "project_name": "Deep Down (2023)",
-            "made_by": "Felix Iltgen",
-            "href": "https://felixiltgen.github.io/Visual-Novel-2022/Deep_Dark/index.html",
-            "songs": [
-                {
-                    "name": "Sunday",
-                    "src": "/audio/Deep Down/sunday.mp3",
-                    "volume": 1
-                },
-                {
-                    "name": "Cave",
-                    "src": "/audio/Deep Down/cave.mp3",
-                    "volume": 0.5
-                },
-                {
-                    "name": "Space pirates",
-                    "src": "/audio/Deep Down/space pirates.mp3",
-                    "volume": 0.2
+                    "volume": 0.1,
+                    "img":"/images/music/prev-unexpadventure.png"
                 }
             ]
         }
