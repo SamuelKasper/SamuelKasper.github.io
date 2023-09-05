@@ -13,10 +13,35 @@ function loadSongs() {
         const response = yield fetch("./json/songs.json");
         const song_data = yield response.json();
         yield loadIndependentSongs(song_data);
+        yield loadNewSongs(song_data);
         yield chooseProjects(song_data);
     });
 }
 ;
+function loadNewSongs(song_data) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const content = document.querySelector(".new");
+        let headline = document.createElement("h4");
+        content === null || content === void 0 ? void 0 : content.appendChild(headline);
+        headline.innerText = "NEU:";
+        let new_songs = song_data.new;
+        new_songs.forEach((song) => {
+            let section = document.createElement("section");
+            section.classList.add("song-section");
+            let text = document.createElement("p");
+            text.classList.add("custom-margin-music");
+            text.innerText = `${song.name}`;
+            let audio = new Audio(song.src);
+            audio.controls = true;
+            audio.volume = song.volume;
+            audio.setAttribute('controlsList', 'nodownload');
+            audio.classList.add("audio-control");
+            section.appendChild(text);
+            section.appendChild(audio);
+            content === null || content === void 0 ? void 0 : content.appendChild(section);
+        });
+    });
+}
 function loadIndependentSongs(song_data) {
     return __awaiter(this, void 0, void 0, function* () {
         const content = document.getElementById("independent_songs");

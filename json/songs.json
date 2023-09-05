@@ -1,4 +1,18 @@
 {
+    "new": [
+        {
+            "name": "Iced Tea",
+            "year": "(2023)",
+            "src": "/audio/independent songs/Iced Tea.mp3",
+            "volume": 0.6
+        },
+        {
+            "name": "Dried Sunflower",
+            "year": "(2023)",
+            "src": "/audio/independent songs/Dried Sunflower.mp3",
+            "volume": 0.6
+        }
+    ],
     "independent_songs": [
         {
             "name": "Slow falling rain",
@@ -22,7 +36,7 @@
     "own_projects": [
         {
             "project_name": "Breaking the Silence (2021)",
-            "href":"https://samuelkasper.github.io/VisualNovelEndabgabe/Endabgabe/index.html",
+            "href": "https://samuelkasper.github.io/VisualNovelEndabgabe/Endabgabe/index.html",
             "songs": [
                 {
                     "name": "Doing stuff",
@@ -57,7 +71,7 @@
         {
             "project_name": "Shattered Pieces (2022)",
             "made_by": "Daniel Meisler",
-            "href":"https://danielmeisler.github.io/VisualNovel_Endabgabe/game.html",
+            "href": "https://danielmeisler.github.io/VisualNovel_Endabgabe/game.html",
             "songs": [
                 {
                     "name": "A short moment",
@@ -79,7 +93,7 @@
         {
             "project_name": "Ein unerwartetes Abenteuer (2022)",
             "made_by": "David Niemann",
-            "href":"https://davidniemann.github.io/Visual_Novel_Niemann_David//Game/Game.html",
+            "href": "https://davidniemann.github.io/Visual_Novel_Niemann_David//Game/Game.html",
             "songs": [
                 {
                     "name": "Home",
@@ -97,10 +111,11 @@
                     "volume": 0.1
                 }
             ]
-        },{
+        },
+        {
             "project_name": "Deep Down (2023)",
             "made_by": "Felix Iltgen",
-            "href":"https://felixiltgen.github.io/Visual-Novel-2022/Deep_Dark/index.html",
+            "href": "https://felixiltgen.github.io/Visual-Novel-2022/Deep_Dark/index.html",
             "songs": [
                 {
                     "name": "Sunday",

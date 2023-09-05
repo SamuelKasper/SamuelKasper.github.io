@@ -3,8 +3,36 @@ async function loadSongs() {
     const song_data = await response.json();
 
     await loadIndependentSongs(song_data);
+    await loadNewSongs(song_data);
     await chooseProjects(song_data);
 };
+
+async function loadNewSongs(song_data: any) {
+    const content = document.querySelector(".new");
+    let headline = document.createElement("h4");
+    content?.appendChild(headline);
+    headline.innerText = "NEU:";
+    let new_songs = song_data.new;
+
+    new_songs.forEach((song: { name: string; year: string; src: string; volume: number; }) => {
+        let section = document.createElement("section");
+        section.classList.add("song-section");
+
+        let text = document.createElement("p");
+        text.classList.add("custom-margin-music");
+        text.innerText = `${song.name}`;
+
+        let audio = new Audio(song.src);
+        audio.controls = true;
+        audio.volume = song.volume;
+        audio.setAttribute('controlsList', 'nodownload');
+        audio.classList.add("audio-control");
+
+        section.appendChild(text);
+        section.appendChild(audio);
+        content?.appendChild(section);
+    });
+}
 
 async function loadIndependentSongs(song_data: any) {
     const content = document.getElementById("independent_songs");
@@ -36,7 +64,7 @@ async function chooseProjects(song_data: any) {
     await laodProjects(song_data.external_projects, externalProjects);
 }
 
-async function laodProjects(projects:any, content: HTMLElement | null){
+async function laodProjects(projects: any, content: HTMLElement | null) {
     projects.forEach((project: any) => {
         let headline = document.createElement("h4");
         let link = document.createElement("a");

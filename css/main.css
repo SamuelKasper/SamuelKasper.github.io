@@ -694,6 +694,11 @@ audio::-webkit-media-controls-enclosure {
     width: 100px;
 }
 
+.new{
+    border-bottom: dotted #cdcdcd 4px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 980px) {
     .splitcols {
         flex-direction: column;
