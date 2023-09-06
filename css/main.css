@@ -7,7 +7,7 @@ body {
     background: #191a22;
     font-family: Roboto, Helvetica, sans-serif;
     color: rgba(255, 255, 255);
-    line-height: 1.75rem;
+    line-height: 1.7;
     font-weight: 100;
     margin: 0px;
     -ms-overflow-style: none;
@@ -96,7 +96,6 @@ h1 {
 h2 {
     font-size: clamp(1.25rem, 0.9713rem + 1.2739vw, 2.5rem);
     font-weight: 100;
-    line-height: 1.5em;
     letter-spacing: -0.025em;
     margin-top: 0px;
 }
@@ -104,7 +103,6 @@ h2 {
 p {
     color: rgba(255, 255, 255, 0.75);
     font-size: clamp(1rem, 0.6385rem + 0.5096vw, 1.25rem);
-    line-height: 1.75em;
     margin: 0 0 1em 0;
 }
 
@@ -388,7 +386,6 @@ p {
     font-size: 1.75rem;
     text-transform: uppercase;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    line-height: 3rem;
     letter-spacing: .25ch;
 }
 
@@ -401,7 +398,6 @@ p {
     .nav-menu a {
         padding: 1.25rem 3rem;
         font-size: 1.5rem;
-        line-height: 1.75rem;
         text-transform: none;
         letter-spacing: 0ch;
     }
