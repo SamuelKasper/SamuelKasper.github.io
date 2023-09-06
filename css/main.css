@@ -45,7 +45,6 @@ h1 {
 
 #typing {
     min-height: 45px;
-    margin-top: 0px !important;
     word-spacing: 5px;
     font-size: clamp(1rem, 0.8885rem + 0.5096vw, 1.5rem);
     text-align: right;
@@ -156,36 +155,30 @@ p {
 
 .from-right {
     animation: appear-from-right 1s 1;
-    border-left-width: 0.35em !important;
+    border-color: #5480f1;
+    border-width: 0 0 0 0.35em;
     right: 0;
     height: 100%;
     padding: 6em 3em;
     width: 30vw;
-    visibility: visible !important;
 }
 
 .from-left {
     animation: appear-from-left 1s 1;
-    border-right-width: 0.35em !important;
+    border-color: #5480f1;
+    border-width: 0 0.35em 0 0 ;
     left: 0;
     height: 100%;
     padding: 6em 3em;
     width: 30vw;
-    visibility: visible !important;
 }
 
 .sidepanel {
     top: 0;
-    visibility: hidden;
     background: rgba(23, 24, 32, 0.95);
     border-style: solid;
     opacity: 1;
     position: absolute;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-color: #5480f1;
 }
 
 .spotlight-btn {
@@ -202,7 +195,7 @@ p {
     border-radius: 4px;
     border: 0;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-    color: #ffffff !important;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-weight: 300;
@@ -212,12 +205,12 @@ p {
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
-    font-size: clamp(14px, 0.6385rem + 0.5096vw, 1.25rem);
+    font-size: clamp(0.875rem, 0.6385rem + 0.5096vw, 1.25rem);
 }
 
 .spotlight-btn:hover {
     box-shadow: inset 0 0 0 1px #5480f1;
-    color: #5480f1 !important;
+    color: #5480f1;
 }
 
 @keyframes appear-from-right {
@@ -247,16 +240,11 @@ p {
 @media screen and (max-width: 980px) {
     .sidepanel {
         background-color: #1c1d26;
-        border-width: 0 !important;
-        border-top-width: 0.35em !important;
-        bottom: auto !important;
-        left: auto !important;
-        padding: 4.5rem 1rem 2.5rem 1rem !important;
+        border-width: 0.35em 0 0 0;
+        padding: 4.5rem 1rem 2.5rem 1rem;
         position: relative;
-        right: auto !important;
         text-align: center;
-        top: auto !important;
-        width: auto !important;
+        width: auto;
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -290,7 +278,7 @@ p {
 #footer p {
     margin: 0;
     color: rgba(255, 255, 255, 0.55);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-icon {
@@ -327,7 +315,7 @@ p {
 }
 
 .nav-landing {
-    float: left !important;
+    float: left;
 }
 
 .nav-landing a {
@@ -336,7 +324,7 @@ p {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -445,11 +433,6 @@ p {
     margin-top: -1em;
 }
 
-.p-style {
-    font-size: 18px !important;
-    color: rgba(255, 255, 255, 0.75) !important;
-}
-
 .content-wrapper p a {
     color: white;
     border-bottom: dotted 1px;
@@ -458,7 +441,7 @@ p {
 }
 
 .content-wrapper p a:hover {
-    color: #5480f1 !important;
+    color: #5480f1;
     border-bottom-color: transparent;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -530,16 +513,12 @@ p {
 }
 
 .project_box a {
-    margin: 0px !important;
-}
-
-.project_box .image {
-    border-radius: 0px 0px 4px 4px !important;
+    margin: 0px;
 }
 
 .project_box a img {
     transition: 0.3s;
-    border-radius: 0px 0px 4px 4px !important;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .project_box p {
@@ -549,7 +528,7 @@ p {
     margin: 0px;
     border-radius: 10px 10px 0px 0px;
     letter-spacing: 1px;
-    font-size: clamp(14px, 0.6385rem + 0.5096vw, 1.25rem);
+    font-size: clamp(0.875rem, 0.6385rem + 0.5096vw, 1.25rem);
     z-index: 1;
     position: relative;
 }
@@ -642,12 +621,14 @@ p {
 }
 
 .music-area h4 a:hover {
-    color: #5480f1 !important;
+    color: #5480f1;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .music-area a {
     text-decoration: none;
     color: white;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .music-area h3 {
@@ -657,32 +638,12 @@ p {
 }
 
 .song-section {
-  /*   display: flex;
-    flex-direction: row;
-    height: 55px;
-    background-color: rgb(220, 220, 220);
-    align-items: center;
-    margin-bottom: 15px;
-    border-radius: 12px 8px 8px 12px;
-    box-shadow: 5px 5px 5px rgb(17, 17, 22); */
     display: flex;
     align-items: center;
     background-color: #ececec;
     border-bottom: solid 2px #191a22;
     height: 55px;
 }
-
-/* .custom-margin-music {
-    margin: 0px !important;
-    height: 100%;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #36394b;
-    border-radius: 8px 0px 0px 8px;
-    text-align: center;
-} */ 
 
 .song-section p {
     margin: 0;
