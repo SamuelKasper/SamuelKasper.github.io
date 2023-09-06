@@ -507,7 +507,6 @@ p {
     row-gap: 15px;
     justify-content: center;
     align-items: center;
-    line-height: 0;
 }
 
 #projects-grid img {
