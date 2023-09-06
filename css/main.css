@@ -36,6 +36,10 @@ h1 {
 
 }
 
+.banner-text h1{
+    margin-top: 0;
+}
+
 #banner-image {
     border-radius: 100%;
     height: clamp(150px, 20vw, 350px);
@@ -48,6 +52,7 @@ h1 {
     word-spacing: 5px;
     font-size: clamp(1rem, 0.8885rem + 0.5096vw, 1.5rem);
     text-align: right;
+    margin: 0.75rem 0 0 0;
 }
 
 .banner-text {
@@ -67,6 +72,7 @@ h1 {
     #typing {
         text-align: center;
         color: white;
+        margin: 0.25rem 0 0 0;
     }
 
     .banner-text {
