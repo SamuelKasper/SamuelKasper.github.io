@@ -67,18 +67,6 @@
 	</footer>
 	</div>
 
-	<!--Stop playing songs if a new one starts-->
-	<script>
-		document.addEventListener('play', function (e) {
-			let audioElements = document.getElementsByTagName('audio');
-			[...audioElements].forEach((audio) => {
-				if (audio != e.target) {
-					audio.pause();
-				}
-			});
-		}, true);
-	</script>
-
 	<script src="src/LoadSongs.js"></script>
 	<script src="src/burgerMenu.js"></script>
 </body>
