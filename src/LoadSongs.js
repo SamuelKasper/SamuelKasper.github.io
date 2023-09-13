@@ -34,7 +34,7 @@ function loadIndependentSongs(song_data) {
             // Bildcover
             section.appendChild(createImg(song.img));
             // Songname
-            section.appendChild(createSongName(song.name));
+            section.appendChild(createSongName(song.name, song.soundcore));
             // Audio Element
             section.appendChild(createAudio(song.src, song.volume));
             //Play Button
@@ -62,7 +62,7 @@ function loadProjects(projects, content) {
                 // Bildcover
                 section.appendChild(createImg(song.img));
                 // Songname
-                section.appendChild(createSongName(song.name));
+                section.appendChild(createSongName(song.name, song.soundcore));
                 // Audio Element
                 section.appendChild(createAudio(song.src, song.volume));
                 //Play Button
@@ -85,11 +85,20 @@ function createAudio(_src, _vol) {
     return audio;
 }
 // Creating the p element for the song name
-function createSongName(_name) {
-    let text = document.createElement("p");
-    text.classList.add("songname");
-    text.innerText = `${_name}`;
-    return text;
+function createSongName(_name, _soundcore) {
+    if (_soundcore && _soundcore != "") {
+        let text = document.createElement("a");
+        text.classList.add("songname");
+        text.innerText = `${_name}`;
+        text.href = `${_soundcore}`;
+        return text;
+    }
+    else {
+        let text = document.createElement("p");
+        text.classList.add("songname");
+        text.innerText = `${_name}`;
+        return text;
+    }
 }
 // Create img element
 function createImg(_src) {

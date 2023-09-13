@@ -661,6 +661,16 @@ audio::-webkit-media-controls-enclosure {
     height: 100%;
 }
 
+.audioplayer a {
+    margin: 0;
+    padding: 0 0.5em 0 1em;
+    min-width: 130px;
+    font-size: 1rem;
+    color: #ececec;
+    border-right: solid 1px #ececec;
+    letter-spacing: 0.05ch;
+}
+
 .audioplayer p {
     margin: 0;
     padding: 0 0.5em 0 1em;

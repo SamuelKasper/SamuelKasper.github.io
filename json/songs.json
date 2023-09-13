@@ -5,6 +5,7 @@
             "year": "(2023)",
             "src": "/audio/independent songs/Dried Sunflower.mp3",
             "img":"/images/music/prev-driedsunflower.jpg",
+            "soundcore":"https://soundcloud.com/noggl/dried-sunflower",
             "volume": 0.6
         },
         {
@@ -12,6 +13,7 @@
             "year": "(2023)",
             "src": "/audio/independent songs/Heatwave.mp3",
             "img":"/images/music/prev-heatwaves.jpg",
+            "soundcore":"https://soundcloud.com/noggl/heatwave",
             "volume": 0.6
         },
         {
@@ -19,6 +21,7 @@
             "year": "(2023)",
             "src": "/audio/independent songs/Iced Tea.mp3",
             "img":"/images/music/prev-icedtea.jpg",
+            "soundcore":"https://soundcloud.com/noggl/iced-tea",
             "volume": 0.6
         },
         {
@@ -26,6 +29,7 @@
             "year": "(2023)",
             "src": "/audio/independent songs/slow falling rain.mp3",
             "volume": 0.4,
+            "soundcore":"",
             "img":"/images/music/prev-slowfallingrain.jpg"
         },
         {
@@ -33,6 +37,7 @@
             "year": "(2022)",
             "src": "/audio/independent songs/back then.mp3",
             "volume": 0.7,
+            "soundcore":"",
             "img":"/images/music/prev-backthen.jpg"
         },
         {
@@ -40,6 +45,7 @@
             "year": "(2021)",
             "src": "/audio/independent songs/a fun day.mp3",
             "volume": 0.3,
+            "soundcore":"",
             "img":"/images/music/prev-funfair.jpg"
         }
     ],

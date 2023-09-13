@@ -19,13 +19,13 @@ async function loadIndependentSongs(song_data: any) {
     const content = document.getElementById("independent_songs");
     let independent_songs = song_data.independent_songs;
 
-    independent_songs.forEach((song: { name: string; year: string; img: string; src: string; volume: number; }) => {
+    independent_songs.forEach((song: { name: string; soundcore: string, year: string; img: string; src: string; volume: number; }) => {
         let section = document.createElement("section");
         section.classList.add("audioplayer");
         // Bildcover
         section.appendChild(createImg(song.img));
         // Songname
-        section.appendChild(createSongName(song.name));
+        section.appendChild(createSongName(song.name, song.soundcore));
         // Audio Element
         section.appendChild(createAudio(song.src, song.volume));
         //Play Button
@@ -48,13 +48,13 @@ async function loadProjects(projects: any, content: HTMLElement | null) {
         headline.appendChild(link);
         content?.appendChild(headline);
 
-        project.songs.forEach(async (song: { name: string; year: string; src: string; img: string; volume: number; }) => {
+        project.songs.forEach(async (song: { name: string; soundcore: string, year: string; src: string; img: string; volume: number; }) => {
             let section = document.createElement("section");
             section.classList.add("audioplayer");
             // Bildcover
             section.appendChild(createImg(song.img));
             // Songname
-            section.appendChild(createSongName(song.name));
+            section.appendChild(createSongName(song.name, song.soundcore));
             // Audio Element
             section.appendChild(createAudio(song.src, song.volume));
             //Play Button
@@ -78,11 +78,20 @@ function createAudio(_src: string, _vol: number): HTMLAudioElement {
 }
 
 // Creating the p element for the song name
-function createSongName(_name: string): HTMLParagraphElement {
-    let text = document.createElement("p");
-    text.classList.add("songname");
-    text.innerText = `${_name}`;
-    return text;
+function createSongName(_name: string, _soundcore: string) {
+    if (_soundcore && _soundcore != "") {
+        let text = document.createElement("a");
+        text.classList.add("songname");
+        text.innerText = `${_name}`;
+        text.href = `${_soundcore}`;
+        return text;
+    }else{
+        let text = document.createElement("p");
+        text.classList.add("songname");
+        text.innerText = `${_name}`;
+        return text;
+    }
+    
 }
 
 // Create img element
