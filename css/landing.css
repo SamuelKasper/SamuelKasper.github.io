@@ -23,7 +23,7 @@
 }
 
 .pagehero__content {
-    z-index: 10;
+    z-index: 3;
     margin-top: clamp(1rem, -2.429rem + 5.357vw, 4rem);
 }
 
