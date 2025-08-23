@@ -1,0 +1,31 @@
+.project {
+  background-color: var(--gray-medium);
+  padding: clamp(3rem, 1.786rem + 5.178vw, 8rem) clamp(1rem, -4rem + 16vi, 6rem)
+    clamp(3rem, 1.301rem + 7.249vw, 10rem);
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.project__description {
+  max-width: 64rem;
+  margin-bottom: 2rem;
+}
+
+.project__image {
+  max-height: 20rem;
+  max-width: 20rem;
+  aspect-ratio: 1;
+}
+
+.project__image--round {
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .project {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,34 @@
+.gallery {
+    background-color: var(--gray-medium);
+    padding: clamp(3rem, 1.786rem + 5.178vw, 8rem) clamp(1rem, -4rem + 16vi, 6rem) clamp(3rem, 1.301rem + 7.249vw, 10rem);
+    text-align: center;
+}
+
+.gallery__description {
+    font-size: 1.125rem;
+}
+
+.gallery__content {
+    margin-top: clamp(2rem, 1.757rem + 1.036vw, 3rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.gallery__item {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .gallery__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .gallery__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,99 +1,231 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <title>Portfolio</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samuel Kasper - Portfolio">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <title>Portfolio</title>
 </head>
-
 <body>
-    <!-- Banner -->
-    <section id="banner">
-        <div class="banner-text">
-            <h1>Hallo, ich bin Samuel</h1>
-            <p id="typing"></p>
+    <nav class="nav">
+        <a href="/index.html" class="logo">
+            <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                <path class="logo-color"
+                    d="M500,0C223.86,0,0,223.86,0,500s223.86,500,500,500,500-223.86,500-500S776.14,0,500,0ZM500,950c-248.53,0-450-201.47-450-450S251.47,50,500,50s450,201.47,450,450-201.47,450-450,450Z" />
+                <polygon class="logo-color"
+                    points="460.94 520.5 424.94 469.08 348.64 578.04 348.64 195 288.64 195 288.64 749.37 288.59 749.45 288.59 755 288.64 755 288.64 766.57 460.94 520.5" />
+                <polygon class="logo-color"
+                    points="479.82 477.85 666.88 745 354.1 745 312.08 805 781.91 805 754.68 766.12 754.84 766.01 522.56 434.27 690.1 195 616.85 195 449.35 434.21 479.87 477.78 479.82 477.85" />
+            </svg>
+            <span class="visually-hidden">Logo</span>
+        </a>
+        <button class="nav__menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="nav__menu-icon" viewBox="0 0 50 50" width="50px" height="50px">
+                <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/>
+            </svg>
+            <p class="visually-hidden">Menü</p>
+        </button>
+
+        <div class="nav__menu">
+            <a href="/aboutme.html" class="nav__menu-link">Mehr über mich</a>
+            <a href="/programming.html" class="nav__menu-link">Programmierung</a>
+            <a href="/gallery.html" class="nav__menu-link">Galerie</a>
+            <a href="/music.html" class="nav__menu-link">Musik</a>
         </div>
-        <img src="images/landing/profile_bw.webp" alt="Junger, lächelnder Mann mit Brille." id="banner-image" />
+    </nav>
+
+    <section class="pagehero">
+        <div class="pagehero__disrupter"></div>
+        <div class="pagehero__content">
+            <h1 class="pagehero__headline">
+                Hey, ich bin <br> 
+                <span>Samuel</span>
+            </h1>
+
+            <div class="pagehero__button-wrapper">
+                <a href="#about-me" class="button button--primary">
+                    Über mich
+                </a>
+
+                <a href="/programming.html" class="button button--white">
+                    Projekte
+                </a>
+            </div>
+        </div>
+        <img src="images/landing/profile_bw.webp" alt="Junger, lächelnder Mann mit Brille." class="banner-image" />
+        
+        <div class="square-container square-container--one">
+            <svg class="square square--one" viewbox="0 0 800 800" fill="transparent" stroke="#ffffff09" stroke-width="25" transform="rotate(30)">
+                <rect class="square" width="700" height="700" x="25" y="25" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="square-container square-container--two">
+            <svg class="square square--one" viewbox="0 0 800 800" fill="transparent" stroke="#ffffff09" stroke-width="20"  transform="rotate(15)">
+                <rect class="square" width="600" height="600" x="25" y="25" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="triangle-container triangle-container--one">
+            <svg class="triangle triangle--one" viewbox="0 0 100 100" stroke="#ffffff9d" stroke-width="3" transform="rotate(30)">
+                <polygon points="50,0 100,100 0,100" class="triangle" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+        <!-- width="50" height="50" -->
+        <div class="triangle-container triangle-container--two">
+            <svg class="triangle triangle--two" viewbox="0 0 50 50"  stroke="#ffffff9d" stroke-width="3" transform="rotate(105)">
+                <polygon points="25,0 50,50 0,50" class="triangle" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="triangle-container triangle-container--three">
+            <svg class="triangle triangle--three" viewbox="0 0 75 75" stroke="#ffffff9d" stroke-width="3" transform="rotate(15)">
+                <polygon points="35,0 75,75 0,75" class="triangle" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="triangle-container triangle-container--four">
+            <svg class="triangle triangle--four" viewbox="0 0 86 86" stroke="#ffffff9d" stroke-width="3" transform="rotate(-10)">
+                <polygon points="42,0 86,86 0,86" class="triangle" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="circle-container circle-container--one">
+            <svg class="circle circle--one" viewbox="0 0 100 100" stroke="#ffffff9d" stroke-width="2">
+                 <circle class="circle" r="30" cx="40" cy="40" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="circle-container circle-container--two">
+            <svg class="circle circle--one" viewbox="0 0 100 100" stroke="#ffffff9d" stroke-width="2">
+                 <circle class="circle" r="23" cx="40" cy="40" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="circle-container circle-container--three">
+            <svg class="circle circle--one" viewbox="0 0 100 100" stroke="#ffffff9d" stroke-width="2">
+                 <circle class="circle" r="15" cx="40" cy="40" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
     </section>
 
-    <!-- About Me -->
-    <section id="about_me">
-        <div class="about_me-flexbox">
-            <header class="flex-item">
-                <h2>Über mich</h2>
-                <p>Zur Zeit bin ich Student im siebten Semester Medieninformatik an der Hochschule
-                    Furtwangen</p>
-            </header>
-            <p class="flex-item">Zu meinen Interessen zähle ich die Web- und Spieleentwicklung, wobei ich bisher sowohl im
-                Front-
-                als auch im Backend tätig war. Außerdem interessiere ich mich für Fotografie und
-                Musikproduktion.</p>
+    <section id="about-me" class="about-me">
+        <h2 class="about-me__headline">Über mich</h2>
+        <div class="about-me__content">
+            <div>
+                <p class="about-me__description">
+                    Schön, dass du auf meiner Website vorbeischaust.<br>
+                    Wie schon gesagt, ist mein Name Samuel. Ich bin 26 Jahre alt und arbeite derzeit als Full-Stack-Webentwickler bei der Werbeagentur Aufwind in Malterdingen.
+                    Ich habe Spaß daran, Websites zu entwickeln, die nicht nur schnell und suchmaschinenfreundlich sind, sondern sich auch einfach gut anfühlen. Dabei ist mir wichtig, dass wirklich alle sie nutzen können - Barrierefreiheit gehört für mich deshalb ganz selbstverständlich dazu.
+                </p>
+                <p class="about-me__description"> 
+                    Ich liebe einfachen, gut strukturierten Code, sowie moderne und innovative Designs und glaube, dass gute Kommunikation der Schlüssel zum Erfolg von fast allem ist.
+                </p>
+            </div>
+            <div>
+                <p class="about-me__description">
+                    Das Erschaffen kreativer Inhalte ist meine größte Leidenschaft und begleitet mich, seit ich denken kann.
+                    Angefangen hat alles mit dem Zeichnen auf Papier. Später kamen das digitale Zeichnen sowie die Musik- und Videoproduktion hinzu.
+                </p>
+                <p class="about-me__description">
+                    Heute setze ich meine Kreativität vor allem in der Programmierung ein. Dort verwandle ich Ideen in funktionierende, ansprechende und durchdachte digitale Lösungen.
+                    Unabhängig vom Medium begeistert mich der Prozess, etwas Eigenes zu erschaffen und zum Leben zu erwecken, jedes Mal aufs Neue.
+                </p>
+            </div>
+        </div>
+        <div class="about-me__disrupter"></div>
+    </section>
 
-            <p class="flex-item">Meine Freizeit verbringe ich gerne mit dem spielen meiner Instrumente,
-                der Produktion eigener Lieder und verschiedenen sportlichen Aktivitäten.
-                Bei gutem Wetter bin ich häufig auch in der Natur beim Fotografieren anzutreffen.
-            </p>
+    <section class="overview">
+        <div class="square-container overview__square-container--one">
+            <svg class="square overview__square--one" viewbox="0 0 800 800" fill="transparent" stroke="#ffffff09" stroke-width="35" transform="rotate(30)">
+                <rect class="square" width="700" height="700" x="35" y="35" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <div class="square-container overview__square-container--two">
+            <svg class="square overview__square--two" viewbox="0 0 800 800" fill="transparent" stroke="#ffffff09" stroke-width="20"  transform="rotate(15)">
+                <rect class="square" width="600" height="600" x="25" y="25" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+
+        <h2 class="overview__headline">
+            Was gibt es hier so?
+        </h2>
+
+        <div class="card__wrapper">
+            <a href="/aboutme.html" class="card">
+                <figure class="card__foreground">
+                    <img class="card__image" src="images/landing/coding.jpg" alt="">
+                    <figcaption class="card__caption">
+                        <h3 class="card__headline">Mehr über mich</h3>
+                        <p class="card__description">Weitere Informationen zu meiner Person, sowie meinem bisherigen Werdengang, meinen Hobbies und meinem aktuellen Beruf.</p>
+                    </figcaption>
+                </figure>
+            </a>
+
+            <a href="/programming.html" class="card">
+                <figure class="card__foreground">
+                    <img class="card__image" src="images/landing/coding.jpg" alt="Clean desk with a Laptop that shows programming code.">
+                    <figcaption class="card__caption">
+                        <h3 class="card__headline">Programmierung</h3>
+                        <p class="card__description">Hier findest du einige meiner Coding Projekte, welche ich während meines Studiums oder in meiner Freizeit umgesetzt habe.</p>
+                    </figcaption>
+                </figure>
+            </a>
+
+            <a href="/gallery.html" class="card">
+                <figure class="card__foreground">
+                    <img class="card__image" src="images/landing/camera.jpg" alt="Black Nikon camera with blurred background.">
+                    <figcaption class="card__caption">
+                        <h3 class="card__headline">Fotografie</h3>
+                        <p class="card__description">In meiner Galerie findest du eine kleine Auswahl von Naturfotografien, die ich in meiner Freizeit gemacht habe. Schau doch mal rein.</p>
+                    </figcaption>
+                </figure>
+            </a>
+
+            <a href="/music.html" class="card">
+                <figure class="card__foreground">
+                    <img class="card__image" src="images/landing/drums.jpg" alt="Closeup of a black drumset on a stage.">
+                    <figcaption class="card__caption">
+                        <h3 class="card__headline">Musik</h3>
+                        <p class="card__description">Inspiriert von meiner früheren Tätigkeit in Musikverein und Konzertorchester, mache ich hin und wieder eigene Musik und Soundtracks.</p>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
     </section>
 
-    <!-- Programming -->
-    <section class="container" >
-        <div id="spotlight-programming" class="spotlight"></div>
-        <div class="sidepanel move-r">
-            <header>
-                <h2>Programmierung</h2>
-            </header>
-            <p>Die Projekte, die es hier zu sehen gibt, sind zum größten Teil in Typescript, Javascript, HTML und CSS
-                programmiert. Ich komme allerdings auch gut in Java und Python zurecht.</p>
-            <a href="projects.html" class="spotlight-btn">Projekte</a>
-        </div>
-    </section>
-
-    <!-- Music -->
-    <section class="container">
-        <div id="spotlight-music" class="spotlight"></div>
-        <div class="sidepanel move-l">
-            <header>
-                <h2>Musik</h2>
-            </header>
-            <p>Inspiriert von meiner ehemaligen Tätigkeit als Schlagzeuger im Akkordeon-Orchester Denzlingen mache ich
-                nun meine eigene Musik mit FL Studio. Nebenbei spiele ich (immer noch) Schlagzeug und Bass-Gitarre.</p>
-            <a href="music.html" class="spotlight-btn">Reinhören</a>
-        </div>
-    </section>
-
-    <!-- Gallerie -->
-    <section class="container no_shadow">
-        <div id="spotlight-gallery" class="spotlight"></div>
-        <div class="sidepanel move-r">
-            <header>
-                <h2>Gallerie</h2>
-            </header>
-            <p>Bei gutem Wetter bin ich gerne in der Natur unterwegs und mache bei Gelegenheit ein paar Fotos. </p>
-            <a href="gallerie.html" class="spotlight-btn">Anschauen</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
+    <footer class="footer">
         <div class="icons">
-			<a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="images/icons/insta.svg"
+			<a href="https://www.instagram.com/littlecrops/" class="footer-icon"><img src="svg/insta.svg"
 					alt="Instagram Icon"></a>
-			<a href="https://github.com/SamuelKasper" class="footer-icon"><img src="images/icons/github.svg"
+			<a href="https://github.com/SamuelKasper" class="footer-icon"><img src="svg/github.svg"
 					alt="Github Icon"></a>
-			<a href="mailto:samuelnkasper@web.de" class="footer-icon"><img src="images/icons/mail.svg"
+			<a href="mailto:samuelnkasper@web.de" class="footer-icon"><img src="svg/mail.svg"
 					alt="E-Mail Icon"></a>
 		</div>
         <p id="copyright">© Samuel Kasper. All rights reserved.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="src/sidepanelAnimation.js"></script>
-    <script src="src/Typing.js"></script>
-    <script src="src/ParallaxScrollAnimation.js"></script>
+    <script src="js/menu.js"></script>
 </body>
-
 </html>

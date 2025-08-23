@@ -1,0 +1,206 @@
+.about_me {
+    display: flex;
+    flex-direction: column;
+    /* gap: clamp(3rem, 2.515rem + 2.071vw, 5rem); */
+    background-color: var(--gray-medium);
+    /* padding: clamp(3rem, 1.786rem + 5.178vw, 8rem) clamp(1rem, -4rem + 16vi, 6rem) clamp(3rem, 1.301rem + 7.249vw, 10rem); */
+    padding: clamp(3rem, 1.786rem + 5.178vw, 8rem) 0 clamp(3rem, 1.301rem + 7.249vw, 10rem);
+}
+
+.about-me__intro {
+    padding: 0 clamp(1rem, -4rem + 16vi, 6rem) clamp(2rem, -1.429rem + 5.357vw, 5rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(3rem, -1.126rem + 17.605vw, 20rem);
+    position: relative;
+
+    img {
+        height: 16rem;
+        width: 16rem;
+        border-radius: 100%;
+        margin: auto;
+    }
+}
+
+.about-me__profile {
+    padding: clamp(2rem, -1.429rem + 5.357vw, 5rem) clamp(1rem, -4rem + 16vi, 6rem);
+    background-color: var(--gray-lighter);
+}
+
+.profile__content-headline {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.profile__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.profile__headline {
+    margin-bottom: 1rem;
+}
+
+.profile__content-block {
+    position: relative;
+    padding-left: clamp(2rem, 1.757rem + 1.036vw, 3rem);
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(var(--light-blue), var(--middle-blue) 43%, var(--purple));
+        border-radius: .5rem;
+    }
+}
+
+.profile__content-row {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    >* {
+        width: 50%;
+    }
+}
+
+.profile__content-right{
+    text-align: right;
+}
+
+.profile__content-full-row {
+    width: 100%;
+}
+
+.about-me__career-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(3rem, 2.515rem + 2.071vw, 5rem);
+    padding: clamp(2rem, -1.429rem + 5.357vw, 5rem) clamp(1rem, -4rem + 16vi, 6rem);
+}
+
+.career__content {
+    display: grid;
+    grid-template-columns: .75rem 1fr;
+    padding: 2rem 0;
+}
+
+.about-me__skills {
+    margin-top: clamp(3rem, 2.757rem + 1.036vw, 4rem);
+}
+
+.career__timeline {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--light-blue), var(--middle-blue) 43%, var(--purple));
+    position: relative;
+}
+
+.career__timeline-end {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--light-blue);
+    position: absolute;
+    top: -1.3rem;
+    left: -.406rem;
+}
+
+.career__timeline-start {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--purple);
+    position: absolute;
+    bottom: -1.3rem;
+    left: -.406rem;
+}
+
+.career__timeline-entries {
+    padding: 3rem 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.career__timeline-entry {
+    position: relative;
+    border-left: 3px solid #fff;
+    padding-left: 1rem;
+    max-width: 30rem;
+
+    &::before {
+        content: '';
+        height: 3px;
+        width: 2rem;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: calc(-2rem - 3px);
+        background-color: #fff;
+    }
+}
+
+.career__timeline-year {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.work__description {
+    margin-top: 1rem;
+}
+
+.skills__sub-headline {
+    margin-top: 1rem;
+}
+
+.skills__content {
+    font-size: 1.125rem;
+}
+
+.skills__list {
+    margin-left: 1.25rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .about-me__intro {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .about-me__career-wrapper {
+        flex-direction: row;
+    }
+
+    .about-me__career-left {
+        max-width: 55%;
+    }
+
+    .about-me__career {
+        flex: 1;
+    }
+
+    .profile__content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* .profile__content-block {
+        position: relative;
+
+        &:first-child{
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    } */
+}

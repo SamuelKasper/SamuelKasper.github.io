@@ -1,0 +1,32 @@
+.button {
+    display: block;
+    font-family: Poppins, Helvetica, sans-serif;
+    padding: .625rem clamp(1.5rem, 1.379rem + 0.518vw, 2rem);
+    font-size: clamp(1rem, 4.2667vw, 1.25rem);
+    font-weight: 400;
+    border: none;
+    border-radius: 2rem;
+    transition: transform .3s;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+
+    &:hover {
+            transform: scale(1.1)
+        }
+    
+    &.button--primary {
+        background: var(--blue);
+        color: var(--dark-gray);
+    }
+
+    &.button--black {
+        background-color: var(--gradient-1);
+        color: #fff;
+    }
+
+    &.button--white {
+        background-color: #fff;
+        color: var(--dark-gray);
+    }
+}

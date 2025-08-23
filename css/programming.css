@@ -1,0 +1,18 @@
+.coding {
+    background-color: var(--gray-medium);
+    padding: clamp(3rem, 1.786rem + 5.178vw, 8rem) clamp(1rem, -4rem + 16vi, 6rem) clamp(3rem, 1.301rem + 7.249vw, 10rem);
+    text-align: center;
+}
+
+.coding__description {
+    font-size: 1.125rem;
+}
+
+.coding__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    width: fit-content;
+    margin: clamp(2rem, 1.757rem + 1.036vw, 3rem) auto 0;
+}
