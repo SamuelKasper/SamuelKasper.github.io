@@ -29,3 +29,17 @@
     flex-direction: row;
   }
 }
+
+.project__back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: .8;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}
